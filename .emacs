@@ -79,3 +79,8 @@
   (package-install 'timu-macos-theme))
 
 (load-theme 'timu-macos t)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+
+(add-hook 'python-mode-hook #'lsp)
